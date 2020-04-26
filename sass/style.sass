@@ -1,5 +1,96 @@
 @import reset
 
+$primaryColorCyan: hsl(179, 62%, 43%)
+$secondaryColorCyan: hsl(179, 47%, 52%)
+$primryColorYellow: hsl(71, 73%, 54%)
+$neutralColorGrey: hsl(204, 43%, 93%)
+$neutralCOlorBlue: hsl(218, 22%, 67%)
+
+\:root
+    font-size: 16px
+
+body
+    font-family: 'Karla', sans-serif
+    background-color: $neutralColorGrey
+
+.wrapper
+    width: 80%
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+    margin: 0 auto
+
+h2, h3, h4
+    margin-bottom: 25px
+p
+    line-height: 1.5rem
+
+.priceBox
+    max-width: 700px
+    display: flex
+    flex-wrap: wrap
+
+.priceHeader, .priceMain, .priceFooter
+    padding: 25px
+
+.priceMain, .priceFooter
+    flex-basis: 100%
+    color: #fff
+
+.priceHeader
+    flex-basis: 100%
+    background-color: #fff
+    border-radius: 5px 5px 0 0
+    h2
+        color: $primaryColorCyan
+    h4
+        color: $primryColorYellow
+    p
+        color: $neutralCOlorBlue
+
+.priceMain
+    background-color: $primaryColorCyan
+    button
+        width: 100%
+        margin-top: 30px
+        padding: 17px 0
+        background-color: $primryColorYellow
+        color: #fff
+        border: none
+        border-radius: 5px
+        font-size: 1rem
+        box-shadow: 0 5px 15px rgba(0,0,0,.2)
+        cursor: pointer
+        transition: background-color .3s, color .3s, box-shadow .3s
+        &:hover
+            background-color: $neutralCOlorBlue
+            color: $primryColorYellow
+            box-shadow: 0 0 15px $primryColorYellow
+
+.priceFooter
+    padding-right: 90px
+    background-color: $secondaryColorCyan
+    border-radius: 0 0 5px 5px
+
+.priceLine
+    padding-bottom: .8rem
+    color: $neutralColorGrey
+    span
+        vertical-align: middle
+        padding-right: 10px
+        color: #fff
+        font-size: 2rem
+        font-weight: 700
+
+
+// Frontend Mentor Footer
+footer
+    position: absolute
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+
 .attribution
     font-size: 11px
     text-align: center

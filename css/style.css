@@ -5,6 +5,132 @@
           box-sizing: border-box;
 }
 
+:root {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  background-color: #e5eff5;
+}
+
+.wrapper {
+  width: 80%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+h2, h3, h4 {
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.5rem;
+}
+
+.priceBox {
+  max-width: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.priceHeader, .priceMain, .priceFooter {
+  padding: 25px;
+}
+
+.priceMain, .priceFooter {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  color: #fff;
+}
+
+.priceHeader {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  background-color: #fff;
+  border-radius: 5px 5px 0 0;
+}
+
+.priceHeader h2 {
+  color: #2ab2af;
+}
+
+.priceHeader h4 {
+  color: #c0df34;
+}
+
+.priceHeader p {
+  color: #98a6bd;
+}
+
+.priceMain {
+  background-color: #2ab2af;
+}
+
+.priceMain button {
+  width: 100%;
+  margin-top: 30px;
+  padding: 17px 0;
+  background-color: #c0df34;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  -webkit-transition: background-color .3s, color .3s, -webkit-box-shadow .3s;
+  transition: background-color .3s, color .3s, -webkit-box-shadow .3s;
+  transition: background-color .3s, color .3s, box-shadow .3s;
+  transition: background-color .3s, color .3s, box-shadow .3s, -webkit-box-shadow .3s;
+}
+
+.priceMain button:hover {
+  background-color: #98a6bd;
+  color: #c0df34;
+  -webkit-box-shadow: 0 0 15px #c0df34;
+          box-shadow: 0 0 15px #c0df34;
+}
+
+.priceFooter {
+  padding-right: 90px;
+  background-color: #4bbebc;
+  border-radius: 0 0 5px 5px;
+}
+
+.priceLine {
+  padding-bottom: .8rem;
+  color: #e5eff5;
+}
+
+.priceLine span {
+  vertical-align: middle;
+  padding-right: 10px;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;

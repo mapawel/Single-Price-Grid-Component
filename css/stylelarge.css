@@ -1,4 +1,18 @@
-body {
-  background-color: grey;
+.priceHeader, .priceMain, .priceFooter {
+  padding: 40px;
+}
+
+.priceMain, .priceFooter {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.priceMain {
+  border-radius: 0 0 0 5px;
+}
+
+.priceFooter {
+  border-radius: 0 0 5px 0;
+  padding-right: 90px;
 }
 /*# sourceMappingURL=stylelarge.css.map */
