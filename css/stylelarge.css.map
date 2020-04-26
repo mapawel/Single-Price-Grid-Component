@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAE,IAAI;CAAG",
+    "sources": [
+        "../sass/stylelarge.sass"
+    ],
+    "names": [],
+    "file": "stylelarge.css"
+}
