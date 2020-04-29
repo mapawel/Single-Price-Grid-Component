@@ -12,14 +12,16 @@ $neutralCOlorBlue: hsl(218, 22%, 67%)
 body
     font-family: 'Karla', sans-serif
     background-color: $neutralColorGrey
+    display: flex
+    flex-flow: column
+    min-height: 100vh
 
 .wrapper
-    width: 80%
-    height: 100vh
     display: flex
     justify-content: center
     align-items: center
-    margin: 0 auto
+    width: 80%
+    margin: auto auto
 
 h2, h3, h4
     margin-bottom: 25px
@@ -88,11 +90,7 @@ p
 
 // Frontend Mentor Footer
 footer
-    position: absolute
-    bottom: 0
-    left: 50%
-    transform: translateX(-50%)
-
+    margin-top: 50px
 .attribution
     font-size: 11px
     text-align: center

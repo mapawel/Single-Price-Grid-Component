@@ -12,11 +12,17 @@
 body {
   font-family: 'Karla', sans-serif;
   background-color: #e5eff5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  min-height: 100vh;
 }
 
 .wrapper {
-  width: 80%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,7 +32,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0 auto;
+  width: 80%;
+  margin: auto auto;
 }
 
 h2, h3, h4 {
@@ -127,11 +134,7 @@ p {
 }
 
 footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-top: 50px;
 }
 
 .attribution {
